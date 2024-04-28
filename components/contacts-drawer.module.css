@@ -1,0 +1,89 @@
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.messages {
+  position: relative;
+  line-height: 150%;
+}
+.photoautoLayoutChild {
+  width: 52px;
+  position: relative;
+  border-radius: 50%;
+  height: 52px;
+  object-fit: cover;
+}
+.omgThisIs {
+  position: relative;
+  font-size: var(--font-size-sm);
+  line-height: 150%;
+  font-weight: 300;
+  opacity: 0.7;
+}
+.nametext {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.contactCard,
+.photoautoLayout {
+  display: flex;
+  flex-direction: row;
+}
+.photoautoLayout {
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.contactCard {
+  width: 327px;
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-darkslateblue-200);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding-xl) 0;
+}
+.contactsdrawer,
+.conversation {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.conversation {
+  flex: 1;
+  overflow-y: auto;
+  align-items: flex-end;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+}
+.contactsdrawer {
+  height: 100%;
+  background-color: var(--color-white);
+  align-items: flex-start;
+  padding: 34px 38px;
+  box-sizing: border-box;
+  gap: var(--gap-5xl);
+  opacity: 0;
+  max-width: 90%;
+  overflow: auto;
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-darkslateblue-100);
+  font-family: var(--font-poppins);
+}
+.contactsdrawer.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-left;
+}
+@media screen and (max-width: 960px) {
+  .contactsdrawer {
+    display: flex;
+  }
+}

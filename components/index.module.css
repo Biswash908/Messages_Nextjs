@@ -1,0 +1,204 @@
+.messages {
+  position: relative;
+  line-height: 150%;
+}
+.conversation {
+  flex: 1;
+  overflow-y: auto;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.contacts,
+.conversation,
+.title {
+  display: flex;
+  justify-content: flex-start;
+}
+.contacts {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-5xl);
+}
+.title {
+  flex-direction: row;
+  align-items: center;
+}
+.vectorIcon {
+  position: absolute;
+  height: 41.67%;
+  width: 75%;
+  top: 29.17%;
+  right: 12.5%;
+  bottom: 29.17%;
+  left: 12.5%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.iconsaxlinearhambergermenu {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.messageheader {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 20px;
+  color: var(--color-darkslateblue-100);
+}
+.whatDoYou {
+  position: relative;
+  line-height: 150%;
+  font-weight: 300;
+}
+.contactmessage,
+.conversationBubble {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.conversationBubble {
+  border-radius: var(--br-5xl) var(--br-5xl) var(--br-5xl) 0;
+  background-color: var(--color-blueviolet);
+  padding: var(--padding-xs) var(--padding-base);
+}
+.contactmessage {
+  align-self: stretch;
+  color: var(--color-white);
+}
+.iThinkThe {
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+  font-weight: 300;
+}
+.conversationBubble2 {
+  width: 258px;
+  border-radius: var(--br-5xl) var(--br-5xl) 0 var(--br-5xl);
+  background-color: var(--color-whitesmoke);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-base);
+  box-sizing: border-box;
+}
+.contactmessage3,
+.conversationBubbleWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.contactmessage3 {
+  height: 48px;
+  justify-content: flex-start;
+  color: var(--color-white);
+}
+.conversationBubbleWrapper2,
+.messagescontainer {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.messagescontainer {
+  flex: 1;
+  align-items: center;
+  padding: 14px 0 var(--padding-mini);
+  gap: 16px;
+  overflow: scroll;
+}
+.maskGroupIcon {
+  position: absolute;
+  top: 16.5px;
+  left: 18px;
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+.typeAMessage {
+  position: absolute;
+  top: 14.5px;
+  left: 50px;
+  line-height: 150%;
+  font-weight: 300;
+  opacity: 0.4;
+}
+.composeNewBtn,
+.composeNewBtn1 {
+  position: relative;
+  border-radius: var(--br-81xl);
+  height: 53px;
+}
+.composeNewBtn {
+  flex: 1;
+  background-color: var(--color-whitesmoke);
+}
+.composeNewBtn1 {
+  width: 53px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.messageinput {
+  align-self: stretch;
+  background-color: var(--color-white);
+  height: 83px;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: var(--padding-mini) 0;
+  box-sizing: border-box;
+  gap: 23px;
+}
+.messageinput,
+.messages1,
+.userMessages {
+  display: flex;
+  justify-content: flex-start;
+}
+.messages1 {
+  align-self: stretch;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 35px 0 0;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+}
+.userMessages {
+  width: 976px;
+  height: 814px;
+  background-color: var(--color-white);
+  max-width: 100%;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  padding: 25px 0 0 37px;
+  box-sizing: border-box;
+  gap: 40px;
+  min-height: 100%;
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-darkslateblue-100);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 960px) {
+  .contacts {
+    display: none;
+  }
+}
